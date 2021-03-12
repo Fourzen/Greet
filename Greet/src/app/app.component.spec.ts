@@ -28,4 +28,12 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('Greet app is running!');
   });
+
+  describe('Greet function', () => {
+    it('should greet when input empty', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.componentInstance;
+      expect(app.Greet()).toBe('Hello, my friend.');
+    });
+  });
 });
