@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Greet';
 
-  Greet(): string {
-    return 'Hello, my friend.';
+  Greet(names: string[]): string {
+    if (names.length === 0)
+    {
+      return 'Hello, my friend.';
+    }
+    return 'Hello, Alex.';
   }
 }

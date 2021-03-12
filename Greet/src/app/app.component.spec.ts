@@ -35,6 +35,7 @@ describe('AppComponent', () => {
       const app = fixture.componentInstance;
       expect(app.Greet()).toBe('Hello, my friend.');
     });
+
     it('should greet a user', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.componentInstance;
