@@ -69,7 +69,7 @@ describe('AppComponent', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.componentInstance;
       const input = ['Elen',  'Mick',  'ALEX', 'ANNA', 'Max', 'JHON'];
-      expect(app.Greet(input)).toBe('Hello, Elen, Mick, and Max AND HELLO ALEX, ANNA, AND JHON!');
+      expect(app.Greet(input)).toBe('Hello, Elen, Mick, and Max. AND HELLO ALEX, ANNA, AND JHON!');
     });
 
   });
