@@ -42,5 +42,12 @@ describe('AppComponent', () => {
       const input = ['Alex'];
       expect(app.Greet(input)).toBe('Hello, Alex.');
     });
+
+    it('should greet a user', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.componentInstance;
+      const input = ['Alex', 'Anna', 'Jhon'];
+      expect(app.Greet(input)).toBe('Hello, Alex, Anna , and Jhon.');
+    });
   });
 });
