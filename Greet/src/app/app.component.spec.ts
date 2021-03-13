@@ -49,12 +49,19 @@ describe('AppComponent', () => {
       const input = ['Alex', 'Anna', 'Jhon'];
       expect(app.Greet(input)).toBe('Hello, Alex, Anna, and Jhon.');
     });
-    
+
     it('should greet in a shouting way', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.componentInstance;
       const input = ['ALEX'];
       expect(app.Greet(input)).toBe('HELLO ALEX!');
+    });
+
+    it('should greet many users', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.componentInstance;
+      const input = ['ALEX', 'ANNA', 'JHON'];
+      expect(app.Greet(input)).toBe('HELLO ALEX, ANNA, AND JHON!');
     });
   });
 });
