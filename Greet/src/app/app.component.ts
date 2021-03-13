@@ -13,6 +13,6 @@ export class AppComponent {
     {
       return 'Hello, my friend.';
     }
-    return 'Hello, Alex.';
+    return 'Hello, ' + names[0] + '.';
   }
 }

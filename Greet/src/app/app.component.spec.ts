@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     it('should greet when input empty', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.componentInstance;
-      expect(app.Greet()).toBe('Hello, my friend.');
+      expect(app.Greet([])).toBe('Hello, my friend.');
     });
 
     it('should greet a user', () => {
