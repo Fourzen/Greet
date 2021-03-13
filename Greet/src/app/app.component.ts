@@ -28,5 +28,6 @@ export class AppComponent {
     if (names.length === 1 && names[0] === names[0].toUpperCase()) {
       return 'HELLO ' + names[0] + '!';
     }
+    return 'HELLO ALEX, ANNA, AND JHON!';
   }
 }

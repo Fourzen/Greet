@@ -57,7 +57,7 @@ describe('AppComponent', () => {
       expect(app.Greet(input)).toBe('HELLO ALEX!');
     });
 
-    it('should greet many users', () => {
+    it('should greet many users in a shouting way', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.componentInstance;
       const input = ['ALEX', 'ANNA', 'JHON'];
