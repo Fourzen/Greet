@@ -57,11 +57,20 @@ describe('AppComponent', () => {
       expect(app.Greet(input)).toBe('HELLO ALEX!');
     });
 
+
     it('should greet many users in a shouting way', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.componentInstance;
       const input = ['ALEX', 'ANNA', 'JHON'];
       expect(app.Greet(input)).toBe('HELLO ALEX, ANNA, AND JHON!');
     });
+
+    it('should greet many users in mixed way', () => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.componentInstance;
+      const input = ['Elen',  'Mick',  'ALEX', 'ANNA', 'Max', 'JHON'];
+      expect(app.Greet(input)).toBe('Hello, Elen, Mick, and Max AND HELLO ALEX, ANNA, AND JHON!');
+    });
+
   });
 });
