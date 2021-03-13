@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Greet';
 
   Greet(names: string[]): string {
+    let text = 'Hello';
     if (names.length === 0)
     {
       return 'Hello, my friend.';
@@ -16,6 +17,13 @@ export class AppComponent {
     if (names.length === 1) {
       return 'Hello, ' + names[0] + '.';
     }
-    return 'Hello, Alex, Anna, and Jhon.';
+    if (names.length > 1) {
+      text += ', ';
+      for (let i = 0; i < names.length - 1; i++){
+        text += names[i] + ', ';
+      }
+      text += 'and ' + names[names.length - 1] + '.';
+      return text;
+    }
   }
 }
