@@ -25,6 +25,8 @@ export class AppComponent {
       text += 'and ' + names[names.length - 1] + '.';
       return text;
     }
-    return 'HELLO ALEX!';
+    if (names.length === 1 && names[0] === names[0].toUpperCase()) {
+      return 'HELLO ' + names[0] + '!';
+    }
   }
 }
