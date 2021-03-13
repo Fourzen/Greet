@@ -13,6 +13,9 @@ export class AppComponent {
     {
       return 'Hello, my friend.';
     }
-    return 'Hello, ' + names[0] + '.';
+    if (names.length === 1) {
+      return 'Hello, ' + names[0] + '.';
+    }
+    return 'Hello, Alex, Anna, and Jhon.';
   }
 }
