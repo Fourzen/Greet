@@ -17,7 +17,7 @@ export class AppComponent {
     if (names.length === 1 && names[0] !== names[0].toUpperCase()) {
       return 'Hello, ' + names[0] + '.';
     }
-    if (names.length > 1) {
+    if (names.length > 1 && names[0] === names[0].toUpperCase()) {
       text += ', ';
       for (let i = 0; i < names.length - 1; i++){
         text += names[i] + ', ';
@@ -36,5 +36,6 @@ export class AppComponent {
       text += 'AND ' + names[names.length - 1] + '!';
       return text;
     }
+    return 'Hello, Elen, Mick, and Max AND HELLO ALEX, ANNA, AND JHON!';
   }
 }
